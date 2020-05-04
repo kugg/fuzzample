@@ -1,0 +1,2 @@
+Server.c was originally written by Brian “Beej Jorgensen” Hall for Beejs guide to network programming.
+This version of server.c has been adapted by Christoffer Jerkeby to run a instrumentaition test for AFL fuzzing.
