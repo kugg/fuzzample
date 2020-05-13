@@ -1,5 +1,9 @@
 #define _GNU_SOURCE
-// gcc -fPIC -shared server_ld_preload.c -o server_ld_preload.so -ldl
+// Compile
+// gcc -fPIC -shared server_ld_preload.c -o slp.so -ldl
+// Usage: 
+// LD_PRELOAD=./slp.so ./server
+// AFL_PRELOAD=./slp.so afl-fuzz .... -- ./server
 
 #include <arpa/inet.h>
 #include <netinet/in.h>
